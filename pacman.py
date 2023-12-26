@@ -63,7 +63,7 @@ pinky_box = False
 moving = False
 ghost_speeds = [2, 2, 2, 2]
 startup_counter = 0
-lives = -2
+lives = 3
 game_over = False
 game_won = False
 
