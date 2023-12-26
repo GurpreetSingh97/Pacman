@@ -4,6 +4,7 @@
 This project is a Python implementation of the classic arcade game Pac-Man. Utilizing the Pygame library, it recreates the nostalgic experience of the original game with a modern touch. Players can navigate through mazes, collect points, and avoid ghosts in a quest to clear the levels.
 
 ## Demo
+[![Now in Android: 55](https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
 ## Requirements
 - Python 3.x
