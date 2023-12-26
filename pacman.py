@@ -669,16 +669,17 @@ def draw_misc():
         pygame.draw.circle(screen, 'blue', (140, 930), 15)
     for i in range(lives):
         screen.blit(pygame.transform.scale(player_images[0], (30, 30)), (650 + i * 40, 915))
+
     if game_over:
         pygame.draw.rect(screen, 'white', [50, 200, 800, 300], 0, 10)
         pygame.draw.rect(screen, 'black', [70, 220, 760, 260], 0, 10)
-        gameover_text = font.render("Game Over! Press Space bar to restart!", True, 'red')
-        screen.blit(gameover_text, (250, 330))
+        gameover_text = font.render("Game Over! Press SPACE BAR to restart!", True, 'red')
+        screen.blit(gameover_text, (250, 345))
     if game_won:
         pygame.draw.rect(screen, 'white', [50, 200, 800, 300], 0, 10)
         pygame.draw.rect(screen, 'black', [70, 220, 760, 260], 0, 10)
-        gameover_text = font.render("Victory! Press Space bar to restart!", True, 'green')
-        screen.blit(gameover_text, (250, 330))
+        gameover_text = font.render("Victory! Press SPACE BAR to restart!", True, 'green')
+        screen.blit(gameover_text, (250, 345))
 
 
 def check_collisions(scor, power, power_count, eaten_ghosts):
@@ -884,7 +885,6 @@ def get_targets(blink_x, blink_y, ink_x, ink_y, pink_x, pink_y, clyd_x, clyd_y):
 
 
 run = True
-
 while run:  # for the time being the same is running
     timer.tick(fps)
     if counter < 19:
@@ -908,7 +908,6 @@ while run:  # for the time being the same is running
 
     screen.fill('black')  # background color
     draw_board()
-
     center_x = player_x + 23
     center_y = player_y + 24
 
@@ -950,12 +949,10 @@ while run:  # for the time being the same is running
     clyde = Ghost(clyde_x, clyde_y, targets[3], ghost_speeds[3], clyde_img, clyde_direction, clyde_dead, clyde_box, 3)
 
     draw_misc()
-
     targets = get_targets(blinky_x, blinky_y, inky_x, inky_y, pinky_x, pinky_y, clyde_x, clyde_y)
 
     turns_allowed = check_position(center_x, center_y)
     if moving:
-
         player_x, player_y = move_player(player_x, player_y)
 
         if not blinky_dead and not blinky.in_box:
@@ -1032,10 +1029,10 @@ while run:  # for the time being the same is running
             inky_x = 440
             inky_y = 388
             inky_direction = 2
-            pinky_x = 440
+            pinky_x = 490
             pinky_y = 438
             pinky_direction = 2
-            clyde_x = 440
+            clyde_x = 420
             clyde_y = 438
             clyde_direction = 2
             eaten_ghost = [False, False, False, False]
@@ -1060,13 +1057,13 @@ while run:  # for the time being the same is running
             blinky_x = 56
             blinky_y = 58
             blinky_direction = 0
-            inky_x = 440
+            inky_x = 490
             inky_y = 388
             inky_direction = 2
             pinky_x = 440
             pinky_y = 438
             pinky_direction = 2
-            clyde_x = 440
+            clyde_x = 420
             clyde_y = 438
             clyde_direction = 2
             eaten_ghost = [False, False, False, False]
@@ -1094,10 +1091,10 @@ while run:  # for the time being the same is running
             inky_x = 440
             inky_y = 388
             inky_direction = 2
-            pinky_x = 440
+            pinky_x = 490
             pinky_y = 438
             pinky_direction = 2
-            clyde_x = 440
+            clyde_x = 420
             clyde_y = 438
             clyde_direction = 2
             eaten_ghost = [False, False, False, False]
@@ -1125,10 +1122,10 @@ while run:  # for the time being the same is running
             inky_x = 440
             inky_y = 388
             inky_direction = 2
-            pinky_x = 440
+            pinky_x = 490
             pinky_y = 438
             pinky_direction = 2
-            clyde_x = 440
+            clyde_x = 420
             clyde_y = 438
             clyde_direction = 2
             eaten_ghost = [False, False, False, False]
@@ -1187,7 +1184,7 @@ while run:  # for the time being the same is running
                 pinky_x = 490
                 pinky_y = 438
                 pinky_direction = 2
-                clyde_x = 440
+                clyde_x = 420
                 clyde_y = 438
                 clyde_direction = 2
                 eaten_ghost = [False, False, False, False]
