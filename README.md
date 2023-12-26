@@ -5,10 +5,7 @@ This project is a Python implementation of the classic arcade game Pac-Man. Util
 
 ## Demo
 
-
-https://github.com/GurpreetSingh97/Pacman/assets/36395745/ba58ae16-a6a5-4551-a8fc-c798636a7907
-
-
+https://github.com/GurpreetSingh97/Pacman/assets/36395745/fae52abe-4153-4523-b059-8bfbddd0253f
 
 ## Requirements
 - Python 3.x
