@@ -18,3 +18,6 @@ This project is a Python implementation of the classic arcade game Pac-Man. Util
 
 ## Usage
 Run the game by executing the `pacman.py` file: ```python pacman.py```
+
+## To-Do
+Break code into smaller functions for modularity and reduced complexity.
