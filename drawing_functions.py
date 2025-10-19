@@ -137,7 +137,7 @@ def draw_misc(font, score, screen, powerup, lives, player_images, game_over, gam
 
                 for i, score_data in enumerate(top_scores[:10], 1):
                     y_pos = 280 + (i * 30)
-                    rank_display = "1st" if i == 1 else "2nd" if i == 2 else "3rd" if i == 3 else f"{i:2d}."
+                    rank_display = f"{i}"
 
                     # Highlight current player's score
                     color = 'lime' if score_data['score'] == score else 'white'
@@ -209,7 +209,7 @@ def draw_misc(font, score, screen, powerup, lives, player_images, game_over, gam
         if top_scores:
             for i, score_data in enumerate(top_scores[:10], 1):
                 y_pos = 240 + (i * 35)
-                rank_display = "1st" if i == 1 else "2nd" if i == 2 else "3rd" if i == 3 else f"{i:2d}."
+                rank_display = f"{i}"
 
                 score_line = f"{rank_display:>4} {score_data['score']:>6} pts  {score_data['player']:<12}  {score_data['date']}"
                 score_text = font.render(score_line, True, 'white')

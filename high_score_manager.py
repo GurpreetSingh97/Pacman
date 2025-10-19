@@ -59,7 +59,7 @@ def show_top_scores(db, limit=10):
     print("=" * 50)
 
     for i, score_data in enumerate(scores, 1):
-        rank_display = "1." if i == 1 else "2." if i == 2 else "3." if i == 3 else f"{i:2d}."
+        rank_display = f"{i}"
         print(f"{rank_display:>4} {score_data['score']:>6} pts  {score_data['player']:<12} ({score_data['date']})")
 
 
