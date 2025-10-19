@@ -1,6 +1,3 @@
-# This file contains all collision-related functions from the original pacman.py
-# No changes to the original code - just moved to separate file
-
 def check_collisions(scor, power, power_count, eaten_ghosts, HEIGHT, WIDTH, player_x, center_y, center_x, level, chomp_sound, eat_fruit_sound):
     num1 = (HEIGHT - 50) // 32
     num2 = WIDTH // 30

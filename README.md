@@ -29,9 +29,7 @@ Run the game by executing the `pacman.py` file: ```python pacman.py```
 ### Game Controls
 - **Arrow Keys** - Move Pacman
 - **P** or **ESC** - Pause/Resume game
-- **SPACE** - Restart after game over
-- **ENTER** - Select menu options
 
 ### High Score Management
-View your scores: ```python3 high_score_manager.py show```
-See all available commands: ```python3 high_score_manager.py```
+- View your scores: ```python3 high_score_manager.py show```
+- See all available commands: ```python3 high_score_manager.py```

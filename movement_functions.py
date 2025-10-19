@@ -1,6 +1,3 @@
-# This file contains all movement-related functions from the original pacman.py
-# No changes to the original code - just moved to separate file
-
 def check_position(centerx, centery, HEIGHT, WIDTH, direction, level):
     turns = [False, False, False, False]
     num1 = (HEIGHT - 50) // 32

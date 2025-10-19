@@ -1,8 +1,5 @@
 import pygame
 
-# This file contains the Ghost class extracted from the original pacman.py
-# No changes to the original code - just moved to separate file
-
 class Ghost:
     def __init__(self, x_coord, y_coord, target, speed, img, direct, dead, box, id):
         self.x_pos = x_coord

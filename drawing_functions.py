@@ -1,9 +1,6 @@
 import pygame
 import math
 
-# This file contains all drawing-related functions from the original pacman.py
-# No changes to the original code - just moved to separate file
-
 PI = math.pi
 
 def draw_misc(font, score, screen, powerup, lives, player_images, game_over, game_won, high_score_info=None, top_scores=None, entering_name=False, player_name_input="", game_paused=False, pause_menu_selection=0, showing_high_scores=False):

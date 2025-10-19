@@ -1,6 +1,3 @@
-# This file contains all AI-related functions from the original pacman.py
-# No changes to the original code - just moved to separate file
-
 def get_targets(blink_x, blink_y, ink_x, ink_y, pink_x, pink_y, clyd_x, clyd_y, player_x, player_y, powerup, blinky, inky, pinky, clyde, eaten_ghost):
     if player_x < 450:
         runaway_x = 900
