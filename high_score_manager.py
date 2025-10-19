@@ -59,7 +59,7 @@ def show_top_scores(db, limit=10):
     print("=" * 50)
 
     for i, score_data in enumerate(scores, 1):
-        rank_display = "1st" if i == 1 else "2nd" if i == 2 else "3rd" if i == 3 else f"{i:2d}."
+        rank_display = "1." if i == 1 else "2." if i == 2 else "3." if i == 3 else f"{i:2d}."
         print(f"{rank_display:>4} {score_data['score']:>6} pts  {score_data['player']:<12} ({score_data['date']})")
 
 
@@ -67,7 +67,7 @@ def show_high_score(db):
     """Show current high score with details"""
     info = db.get_high_score_info()
 
-    print("🎯 Current High Score:")
+    print("Current High Score:")
     print("=" * 22)
     print(f"Score: {info['score']} points")
     print(f"Player: {info['player']}")
@@ -78,7 +78,7 @@ def show_database_info(db):
     """Show database statistics"""
     info = db.get_database_info()
 
-    print("📊 Database Information:")
+    print("Database Information:")
     print("=" * 24)
     print(f"Total games played: {info['total_games']}")
     print(f"Average score: {info['average_score']}")
@@ -90,13 +90,13 @@ def show_database_info(db):
 
 def clear_scores(db):
     """Clear all scores with confirmation"""
-    response = input("⚠️  Are you sure you want to clear ALL scores? (yes/no): ")
+    response = input("️Are you sure you want to clear ALL scores? (yes/no): ")
 
     if response.lower() == 'yes':
         if db.clear_scores():
-            print("✅ All scores cleared successfully!")
+            print("All scores cleared successfully!")
         else:
-            print("❌ Error clearing scores.")
+            print("Error clearing scores.")
     else:
         print("Operation cancelled.")
 
@@ -114,12 +114,12 @@ def add_test_score(db):
         is_new_high = db.update_high_score(score, player_name)
 
         if is_new_high:
-            print(f"🎉 NEW HIGH SCORE! {score} points by {player_name}")
+            print(f"NEW HIGH SCORE! {score} points by {player_name}")
         else:
-            print(f"✅ Score added: {score} points by {player_name}")
+            print(f"Score added: {score} points by {player_name}")
 
     except ValueError:
-        print("❌ Invalid score. Please enter a number.")
+        print("Invalid score. Please enter a number.")
     except KeyboardInterrupt:
         print("\nOperation cancelled.")
 
